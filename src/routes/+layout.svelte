@@ -1,6 +1,7 @@
 <script>
 	import '../app.css';
 	import Navbar from '$lib/components/Navbar.svelte';
+	import Footer from '$lib/components/Footer.svelte';
 	let { children } = $props();
 </script>
 
@@ -8,3 +9,4 @@
 <main class="pt-16">
 	{@render children?.()}
 </main>
+<Footer />
