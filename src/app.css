@@ -5,6 +5,13 @@
 	themes: all;
 }
 
+@layer base {
+	/* Reduce default margins for sections */
+	section {
+		margin-bottom: 1.5rem; /* 24px */
+	}
+}
+
 @layer utilities {
 	/* Hide scrollbar for Chrome, Safari, and Opera */
 	.no-scrollbar::-webkit-scrollbar {
