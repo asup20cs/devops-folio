@@ -20,17 +20,17 @@ export const personalInfo = {
 		{
 			name: 'GitHub',
 			url: 'https://github.com/yourusername',
-			icon: '/images/icons/stack.png'
+			icon: '/images/stack.png'
 		},
 		{
 			name: 'LinkedIn',
 			url: 'https://linkedin.com/in/yourusername',
-			icon: '/images/icons/stack.png'
+			icon: '/images/stack.png'
 		},
 		{
 			name: 'Twitter',
 			url: 'https://twitter.com/yourusername',
-			icon: '/images/icons/stack.png'
+			icon: '/images/stack.png'
 		}
 	]
 };
@@ -85,7 +85,12 @@ export const techStack = {
 	],
 
 	// Containerization & Orchestration
-	containerization: [{ name: 'Docker', icon: '/images/icons/stack.png' }],
+	containerization: [
+		{
+			name: 'Docker',
+			icon: 'https://img.icons8.com/?size=100&id=cdYUlRaag9G9&format=png&color=000000'
+		}
+	],
 
 	// CI/CD & Automation
 	cicd: [
