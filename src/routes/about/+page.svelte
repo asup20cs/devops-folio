@@ -25,9 +25,9 @@
 	];
 </script>
 
-<div class="container mx-auto px-4 py-8" in:fade={{ duration: 300 }}>
+<div class="py-4" in:fade={{ duration: 300 }}>
 	<!-- Section Navigation -->
-	<div class="bg-base-100 sticky top-16 z-30 mb-8 flex justify-center pt-2 pb-2">
+	<div class="bg-base-100 sticky top-16 z-30 mb-4 flex justify-center pt-2 pb-2">
 		<div class="tabs tabs-boxed">
 			{#each sections as section}
 				<button class="tab gap-2" onclick={() => scrollToSection(section.id)}>
@@ -39,8 +39,8 @@
 	</div>
 
 	<!-- Profile Section -->
-	<section id="profile" class="mb-16 scroll-mt-24" in:fly={{ y: 50, duration: 500, delay: 200 }}>
-		<h2 class="mb-8 flex items-center gap-3 text-3xl font-bold">
+	<section id="profile" class="mb-12 scroll-mt-24" in:fly={{ y: 50, duration: 500, delay: 200 }}>
+		<h2 class="mb-6 flex items-center gap-3 text-3xl font-bold">
 			<img src={sectionIcons.profile} alt="Profile" class="h-6 w-6" />
 			Profile
 		</h2>
