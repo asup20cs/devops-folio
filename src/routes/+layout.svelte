@@ -5,8 +5,12 @@
 	let { children } = $props();
 </script>
 
-<Navbar />
-<main class="pt-16">
-	{@render children?.()}
-</main>
-<Footer />
+<div class="flex min-h-screen flex-col">
+	<Navbar />
+
+	<main class="mx-auto w-full flex-1 px-4 pt-4 sm:w-[90%] sm:px-6 lg:w-[70%]">
+		{@render children?.()}
+	</main>
+
+	<Footer />
+</div>
