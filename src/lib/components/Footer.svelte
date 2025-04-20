@@ -121,7 +121,7 @@
 
 	<!-- Nepal time section -->
 	<div class="mb-4 text-center">
-		<p class="font-mono text-sm">{nepalTime} • {nepalDate}</p>
+		<p class="font-mono text-sm">{nepalDate} | {nepalTime}</p>
 	</div>
 
 	<!-- Icons8 attribution -->
