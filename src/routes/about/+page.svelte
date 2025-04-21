@@ -29,7 +29,7 @@
 	<!-- Section Navigation -->
 	<div class="bg-base-100 sticky top-16 z-30 mb-4 flex justify-center pt-2 pb-2">
 		<div class="tabs tabs-boxed">
-			{#each sections as section}
+			{#each sections as section (section)}
 				<button class="tab gap-2" onclick={() => scrollToSection(section.id)}>
 					<img src={sectionIcons[section.id]} alt={section.label} class="h-4 w-4" />
 					<span>{section.label}</span>
@@ -62,7 +62,7 @@
 				</div>
 
 				<div class="mt-6 flex gap-4">
-					<a href={`mailto:${personalInfo.email}`} class="btn btn-primary btn-sm gap-2">
+					<a href={`mailto:${personalInfo.email}`} class="btn btn-primary btn-lg gap-2">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							class="h-4 w-4"
@@ -79,7 +79,7 @@
 						</svg>
 						Contact Me
 					</a>
-					<a href={personalInfo.resumeUrl} target="_blank" class="btn btn-outline btn-sm gap-2">
+					<a href={personalInfo.resumeUrl} target="_blank" class="btn btn-outline btn-lg gap-2">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							class="h-4 w-4"
@@ -99,19 +99,14 @@
 				</div>
 
 				<div class="mt-6 flex gap-3">
-					{#each personalInfo.socialLinks as social}
+					{#each personalInfo.socialLinks as social (social)}
 						<a
 							href={social.url}
 							target="_blank"
 							rel="noopener noreferrer"
-							class="btn btn-circle btn-sm btn-ghost"
+							class="btn btn-square btn-lg btn-ghost"
 						>
-							<img
-								src={social.icon}
-								alt={social.name}
-								class="w 5
-								h-5"
-							/>
+							<img src={social.icon} alt={social.name} />
 						</a>
 					{/each}
 				</div>
@@ -127,7 +122,7 @@
 		</h2>
 
 		<div class="space-y-6">
-			{#each education as edu}
+			{#each education as edu (edu)}
 				<div class="card bg-base-100 shadow-lg transition-shadow hover:shadow-xl">
 					<div class="card-body">
 						<div class="flex flex-col md:flex-row md:justify-between">
@@ -153,7 +148,7 @@
 		</h2>
 
 		<div class="space-y-6">
-			{#each experience as exp}
+			{#each experience as exp (exp)}
 				<div class="card bg-base-100 shadow-lg transition-shadow hover:shadow-xl">
 					<div class="card-body">
 						<div class="flex flex-col md:flex-row md:justify-between">
@@ -167,7 +162,7 @@
 						<div class="mt-4">
 							<h4 class="mb-2 font-semibold">Key Responsibilities:</h4>
 							<ul class="list-disc space-y-1 pl-5">
-								{#each exp.responsibilities as responsibility}
+								{#each exp.responsibilities as responsibility (responsibility)}
 									<li>{responsibility}</li>
 								{/each}
 							</ul>
@@ -190,7 +185,7 @@
 		</h2>
 
 		<div class="grid grid-cols-1 gap-6 md:grid-cols-2">
-			{#each certifications as cert}
+			{#each certifications as cert (cert.name)}
 				<div class="card bg-base-100 shadow-lg transition-shadow hover:shadow-xl">
 					<figure class="px-4 pt-4">
 						<img
@@ -214,7 +209,7 @@
 									href={cert.verificationUrl}
 									target="_blank"
 									rel="noopener noreferrer"
-									class="btn btn-sm btn-outline"
+									class="btn btn-lg btn-outline btn-wide"
 								>
 									Verify
 								</a>
@@ -234,15 +229,15 @@
 		</h2>
 
 		<div class="space-y-8">
-			{#each Object.entries(techStack) as [category, technologies]}
+			{#each Object.entries(techStack) as [category, technologies] (category)}
 				<div>
 					<h3 class="mb-4 text-xl font-semibold capitalize">
 						{category.replace(/([A-Z])/g, ' $1').trim()}
 					</h3>
 					<div class="flex flex-wrap gap-4">
-						{#each technologies as tech}
+						{#each technologies as tech (tech.name)}
 							<div class="bg-base-100 flex items-center gap-2 rounded-lg px-3 py-2 shadow-md">
-								<img src={tech.icon} alt={tech.name} class="h-5 w-5" />
+								<img src={tech.icon} alt={tech.name} class="h-15 w-15" />
 								<span>{tech.name}</span>
 							</div>
 						{/each}
