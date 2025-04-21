@@ -1,3 +1,55 @@
+<!--
+	Footer.svelte
+
+	This component represents the footer section of a portfolio website. It includes the following features:
+	
+	1. **Made with Love Section**:
+		 - Displays a message indicating the portfolio was made with love.
+		 - Includes a heart icon with a beating animation.
+
+	2. **Tech Stack Section**:
+		 - Lists the technologies used in the portfolio, each represented by an icon and name.
+		 - Each technology links to its official website.
+		 - Icons are sourced from Icons8.
+
+	3. **Nepal Time Section**:
+		 - Dynamically displays the current date and time in Nepal's timezone (UTC+5:45).
+		 - Updates every second using `setInterval`.
+
+	4. **Icons8 Attribution**:
+		 - Provides attribution to Icons8 for the icons used in the tech stack section.
+
+	## Props:
+	- None.
+
+	## State Variables:
+	- `techStack`: Array of objects representing the technologies used, each containing:
+		- `name`: Name of the technology.
+		- `icon`: URL of the technology's icon.
+		- `url`: Official website of the technology.
+	- `nepalTime`: String representing the current time in Nepal.
+	- `nepalDate`: String representing the current date in Nepal.
+	- `timeInterval`: Reference to the interval timer for updating Nepal time.
+
+	## Functions:
+	- `updateNepalTime`:
+		- Calculates and formats the current date and time in Nepal's timezone.
+		- Updates `nepalTime` and `nepalDate` state variables.
+
+	## Lifecycle:
+	- `onMount`:
+		- Initializes the Nepal time display by calling `updateNepalTime`.
+		- Sets up an interval to update the time every second.
+		- Cleans up the interval when the component is destroyed.
+
+	## Styles:
+	- `.heart-beat`:
+		- Adds a heartbeat animation to the heart icon in the "Made with Love" section.
+		- Uses a keyframe animation to scale the heart icon periodically.
+
+	## Accessibility:
+	- Links in the tech stack and attribution sections include `target="_blank"` and `rel="noopener noreferrer"` for safe external navigation.
+-->
 <!-- src/lib/components/Footer.svelte -->
 <script>
 	import { onMount } from 'svelte';
@@ -98,14 +150,14 @@
 		<p class="text-lg">
 			Made with
 			<span class="heart-beat text-error inline-block">❤</span>
-			by <span class="font-bold">[Your Name]</span>
+			by <span class="font-bold">Ashutosh Khanal Upadhyay</span>
 		</p>
 	</div>
 
 	<!-- Tech stack section with Icons8 SVGs -->
 	<div class="mb-5 w-full text-center">
 		<div class="flex flex-wrap justify-center gap-3">
-			{#each techStack as tech}
+			{#each techStack as tech (tech.name)}
 				<a
 					href={tech.url}
 					class="badge badge-lg flex items-center gap-2 transition-opacity hover:opacity-80"
