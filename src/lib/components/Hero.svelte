@@ -1,3 +1,38 @@
+<!--
+	Hero.svelte
+
+	This component represents the Hero section of a portfolio website. It includes animated elements
+	such as a name, title, description, and buttons, which are revealed with staggered animations 
+	when the component is mounted.
+
+	Features:
+	- Animated introduction of the user's name with a fly-in effect.
+	- Title with a scaling animation for emphasis.
+	- Description with a fade-in effect to provide additional details.
+	- Buttons with staggered fly-in animations for navigation.
+
+	Transitions and Animations:
+	- Uses Svelte's built-in transitions (`fly`, `scale`, `fade`) for smooth animations.
+	- Easing functions (`backOut`, `elasticOut`) are applied for natural motion effects.
+	- Animations are staggered using delays to create a sequential reveal effect.
+
+	Props:
+	- None.
+
+	Dependencies:
+	- `svelte/transition` for animations.
+	- `svelte/easing` for easing functions.
+	- `onMount` from `svelte` to trigger animations after the component is mounted.
+
+	Usage:
+	- Place this component in the desired section of your Svelte application.
+	- Customize the text, links, and styles as needed to match your portfolio's theme.
+
+	Notes:
+	- Ensure that the CSS classes used (e.g., `btn`, `text-primary`, `text-secondary`) are defined
+		in your project's styles or framework (e.g., Tailwind CSS).
+	- The `visible` variable controls the conditional rendering of animated elements.
+-->
 <script>
 	import { fade, fly, scale } from 'svelte/transition';
 	import { backOut, elasticOut } from 'svelte/easing';
@@ -22,15 +57,13 @@
 		<!-- Name with fly-in animation -->
 		<div in:fly={{ y: -50, duration: 800, delay: 200, easing: backOut }}>
 			<h1 class="mb-4 text-5xl font-bold md:text-6xl">
-				Hi, I'm <span class="text-primary">[Your Name]</span>
+				Hi, I'm <span class="text-primary">Ashutosh Khanal Upadhyay</span>
 			</h1>
 		</div>
 
 		<!-- Title with scale animation -->
 		<div in:scale={{ start: 0.8, duration: 700, delay: 500, easing: elasticOut }}>
-			<h2 class="text-secondary mb-2 text-2xl font-semibold md:text-3xl">
-				DevOps Engineer & Enthusiast
-			</h2>
+			<h2 class="text-secondary mb-2 text-2xl font-semibold md:text-3xl">DevOps Enthusiast</h2>
 		</div>
 
 		<!-- Description with fade animation -->
@@ -58,9 +91,6 @@
 				in:fly={{ x: 0, duration: 600, delay: 1000 }}
 			>
 				Projects
-			</a>
-			<a href="/blog" class="btn btn-outline btn-lg" in:fly={{ x: 40, duration: 600, delay: 1100 }}>
-				Blog
 			</a>
 		</div>
 	{/if}

@@ -1,6 +1,77 @@
+<!--
+	Themes.svelte
+
+	This component provides a theme selector dropdown that allows users to choose from a predefined list of themes.
+	The selected theme is applied to the document and persisted using localStorage and cookies.
+
+	## Features:
+	- Displays a dropdown menu with a list of themes.
+	- Shows a preview of the current theme using color swatches.
+	- Persists the selected theme across sessions using localStorage and cookies.
+	- Dynamically extracts theme colors from CSS variables for accurate previews.
+
+	## Props:
+	- None
+
+	## Reactive Variables:
+	- `current_theme`: Stores the currently selected theme.
+	- `themeColors`: An object containing the color palette for each theme.
+	- `initialized`: A boolean indicating whether theme colors have been loaded.
+
+	## Functions:
+	- `set_theme(theme)`: Sets the selected theme, updates localStorage and cookies, and applies the theme to the document.
+	- `loadThemeColors()`: Dynamically extracts theme colors from CSS variables and populates the `themeColors` object.
+
+	## Lifecycle:
+	- `onMount`: Initializes the component by loading the saved theme or setting a default theme. It also loads theme colors after a short delay.
+
+	## Dropdown Structure:
+	- The dropdown button displays the current theme's color swatches and a palette icon.
+	- The dropdown menu lists all available themes with their respective color swatches.
+	- Clicking on a theme in the dropdown applies the theme and closes the dropdown.
+
+	## Accessibility:
+	- The dropdown button is accessible with a descriptive `aria-label`.
+	- The dropdown menu uses `tabindex="0"` for keyboard navigation.
+
+	## Notes:
+	- The `loadThemeColors` function creates a temporary DOM element to extract CSS variables for each theme.
+	- A short delay is used during initialization to ensure styles are applied before extracting colors.
+	- The component uses the `data-theme` attribute on the document root to apply themes.
+-->
 <!-- src/lib/components/ThemeSelect.svelte -->
 <script>
-	import { themes } from '$lib/themes.js';
+	const themes = [
+		'light',
+		'dark',
+		'cupcake',
+		'bumblebee',
+		'emerald',
+		'corporate',
+		'synthwave',
+		'retro',
+		'cyberpunk',
+		'valentine',
+		'halloween',
+		'garden',
+		'forest',
+		'aqua',
+		'lofi',
+		'pastel',
+		'fantasy',
+		'wireframe',
+		'black',
+		'luxury',
+		'dracula',
+		'cmyk',
+		'autumn',
+		'business',
+		'acid',
+		'lemonade',
+		'night',
+		'coffee',
+		'winter'
+	];
 	import { onMount } from 'svelte';
 
 	let current_theme = $state('');
@@ -110,7 +181,7 @@
 		class="dropdown-content bg-base-200 rounded-box z-[51] mt-1 max-h-96 w-52 overflow-y-auto p-2 shadow-lg"
 	>
 		<!-- Increased z-index -->
-		{#each themes as theme}
+		{#each themes as theme (theme)}
 			<li>
 				<button
 					type="button"
