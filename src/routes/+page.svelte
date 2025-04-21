@@ -1,6 +1,7 @@
 <!-- src/routes/+page.svelte -->
 <script>
 	import Hero from '$lib/components/Hero.svelte';
+	import { fade } from 'svelte/transition';
 </script>
 
 <div class="py-4" in:fade={{ duration: 300 }}>
