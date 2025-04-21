@@ -1,5 +1,3 @@
-# 🚧 Work in Progress: My Portfolio 🚧
-
 Welcome to the repository! This project is a personal portfolio website built using modern web technologies to showcase my skills, projects, and experience. It's a work in progress, and I'm constantly improving it to make it better.
 
 ---
