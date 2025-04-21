@@ -9,28 +9,29 @@
 
 // Personal Information
 export const personalInfo = {
-	name: 'Jane Doe',
-	title: 'DevOps Engineer',
-	image: '/images/placeholder.png', // Path to your profile image
-	bio: 'Experienced DevOps Engineer with a passion for automating infrastructure and optimizing deployment pipelines.',
-	email: 'contact@example.com',
-	location: 'San Francisco, CA',
+	name: 'Ashutosh Khanal Upadhyay',
+	title: 'DevOps Enthusiast',
+	image: '/images/profile1.png', // Path to your profile image
+	bio: 'DevOps Ethusiast with a passion for automating infrastructure and optimizing deployment pipelines.',
+	email: 'uashutoshk@gmail.com',
+	location: 'Ramgram-3, Parasi, Nepal',
 	resumeUrl: '/resume.pdf', // Path to your resume PDF
+	githubUsername: 'asup20cs',
 	socialLinks: [
 		{
 			name: 'GitHub',
-			url: 'https://github.com/yourusername',
-			icon: '/images/stack.png'
+			url: 'https://github.com/asup20cs',
+			icon: 'https://img.icons8.com/bubbles/200/github.png'
 		},
 		{
 			name: 'LinkedIn',
-			url: 'https://linkedin.com/in/yourusername',
-			icon: '/images/stack.png'
+			url: 'https://www.linkedin.com/in/asup20cs/',
+			icon: 'https://img.icons8.com/bubbles/200/linkedin.png'
 		},
 		{
-			name: 'Twitter',
-			url: 'https://twitter.com/yourusername',
-			icon: '/images/stack.png'
+			name: 'X',
+			url: 'https://x.com/uashutoshk',
+			icon: 'https://img.icons8.com/ios/250/twitterx--v2.png'
 		}
 	]
 };
@@ -38,41 +39,40 @@ export const personalInfo = {
 // Education Information
 export const education = [
 	{
-		degree: 'Master of Science in Computer Science',
-		institution: 'University of Technology',
-		location: 'San Francisco, CA',
-		period: '2018 - 2020',
-		description: 'Specialized in Cloud Computing and Distributed Systems'
+		degree: 'Bachelor of Engineering Computer Science',
+		institution: 'Visvesvaraya Technological University',
+		location: 'Belagavi, Karnataka, India',
+		period: '2020 - 2024',
+		description: ''
 	}
 ];
 
 // Work Experience
 export const experience = [
 	{
-		title: 'Senior DevOps Engineer',
-		company: 'Tech Innovations Inc.',
+		title: 'Cybersecurity and Ethical Hacking Intern',
+		company: 'Innovate Intern',
 		location: 'Remote',
-		period: '2021 - Present',
+		period: 'Feb 2024 - April 2024',
 		responsibilities: [
-			'Implemented CI/CD pipelines for microservices architecture',
-			'Managed multi-region Kubernetes clusters with 99.9% uptime',
-			'Reduced deployment time by 70% through automation'
+			'Acquired comprehension of cyber security principles, ethical hacking, and vulnerability assessment.',
+			'Gained proficiency in utilizing various tools and technologies such as OWASP ZAP and Metasploit for conducting penetration testing and vulnerability assessment.'
+		]
+	},
+	{
+		title: 'Web Development Intern',
+		company: 'Vault of Code',
+		location: 'Remote',
+		period: 'Oct 2023 - Nov 2023',
+		responsibilities: [
+			'Grasped the fundamental concepts of web development.',
+			'Contributed to the maintenance and construction of the companys website.'
 		]
 	}
 ];
 
 // Certifications
-export const certifications = [
-	{
-		name: 'AWS Certified DevOps Engineer - Professional',
-		issuer: 'Amazon Web Services',
-		date: '2022',
-		expiry: '2025',
-		credentialId: 'CERT-12345',
-		image: '/images/placeholder.png', // Path to certificate image
-		verificationUrl: 'https://www.credly.com/badges/example-verification-link' // Optional verification link
-	}
-];
+export const certifications = [];
 
 // Skills & Tech Stack
 export const techStack = {
@@ -81,6 +81,10 @@ export const techStack = {
 		{
 			name: 'AWS',
 			icon: 'https://img.icons8.com/?size=100&id=wU62u24brJ44&format=png&color=000000'
+		},
+		{
+			name: 'Azure',
+			icon: 'https://img.icons8.com/?size=100&id=81727&format=png&color=000000'
 		}
 	],
 
@@ -115,7 +119,11 @@ export const techStack = {
 
 	// Programming Languages
 	languages: [
-		{ name: 'Python', icon: 'https://img.icons8.com/?size=100&id=13441&format=png&color=000000' }
+		{ name: 'Python', icon: 'https://img.icons8.com/?size=100&id=13441&format=png&color=000000' },
+		{
+			name: 'Bash',
+			icon: 'https://img.icons8.com/?size=100&id=50ZQHdJTmPqw&format=png&color=000000'
+		}
 	]
 };
 
