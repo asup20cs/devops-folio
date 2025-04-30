@@ -11,7 +11,7 @@
 export const personalInfo = {
 	name: 'Ashutosh Khanal Upadhyay',
 	title: 'DevOps Enthusiast',
-	image: '/images/profile1.png', // Path to your profile image
+	image: '/images/profile2.png', // Path to your profile image
 	bio: 'DevOps Ethusiast with a passion for automating infrastructure and optimizing deployment pipelines.',
 	email: 'uashutoshk@gmail.com',
 	location: 'Ramgram-3, Parasi, Nepal',
