@@ -10,6 +10,8 @@
 		sectionIcons
 	} from '$lib/profile.js';
 
+	import resume from '$lib/resume.pdf';
+
 	// Function to scroll to a section
 	function scrollToSection(id) {
 		document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
@@ -79,7 +81,7 @@
 						</svg>
 						Contact Me
 					</a>
-					<a href={personalInfo.resumeUrl} target="_blank" class="btn btn-outline btn-lg gap-2">
+					<a href={resume} target="_blank" class="btn btn-outline btn-lg gap-2">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							class="h-4 w-4"
