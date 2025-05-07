@@ -48,7 +48,8 @@
 	const routes = [
 		{ path: '/', label: 'Home' },
 		{ path: '/about', label: 'About' },
-		{ path: '/projects', label: 'Projects' }
+		{ path: '/projects', label: 'Projects' },
+		{ path: 'https://tutorials.uashutoshk.com.np', label: 'Tutorials', external: true }
 	];
 </script>
 
