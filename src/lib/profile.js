@@ -134,3 +134,30 @@ export const sectionIcons = {
 	certifications: 'https://img.icons8.com/?size=100&id=13194&format=png&color=000000',
 	techStack: 'https://img.icons8.com/?size=100&id=13057&format=png&color=000000'
 };
+
+export const project = [
+	{
+		name: 'devops-folio',
+		description: 'A personal portfolio website built with SvelteKit and Tailwind CSS.',
+		language: 'Svelte',
+		languageIcon: 'https://img.icons8.com/doodle/96/svetle.png', // Svelte icon
+		githubLink: 'https://github.com/asup20cs/devops-folio',
+		liveDemoLink: 'https://www.uashutoshk.com.np/'
+	},
+	{
+		name: 'CurrencyRecognizationApp',
+		description: 'A python app to recognize currencies',
+		language: 'Python',
+		languageIcon: 'https://img.icons8.com/color/240/python--v1.png', // Svelte icon
+		githubLink: 'https://github.com/asup20cs/CurrencyRecognizationApp',
+		liveDemoLink: ''
+	},
+	{
+		name: 'dev-tutorials',
+		description: 'A blog app for writing tutorials for DevOps and Blogs',
+		language: 'Astro',
+		languageIcon: 'https://img.icons8.com/nolan/96/astro.png', // Svelte icon
+		githubLink: 'https://github.com/asup20cs/dev-tutorials',
+		liveDemoLink: ''
+	}
+];
