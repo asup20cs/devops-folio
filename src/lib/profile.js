@@ -15,7 +15,6 @@ export const personalInfo = {
 	bio: 'DevOps Ethusiast with a passion for automating infrastructure and optimizing deployment pipelines.',
 	email: 'uashutoshk@gmail.com',
 	location: 'Ramgram-3, Parasi, Nepal',
-	resumeUrl: '/resume.pdf', // Path to your resume PDF
 	githubUsername: 'asup20cs',
 	socialLinks: [
 		{
