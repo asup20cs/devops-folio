@@ -4,7 +4,6 @@
 	import { personalInfo, project } from '$lib/profile.js';
 	import GithubStats from '$lib/components/GithubStats.svelte';
 	import ProjectCard from '$lib/components/ProjectCard.svelte';
-	console.log(project);
 </script>
 
 <div class="py-8" in:fade={{ duration: 300 }}>
