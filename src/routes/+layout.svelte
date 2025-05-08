@@ -5,7 +5,7 @@
 	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
 	injectSpeedInsights();
 
-	let { children } = $props();
+	const { children } = $props();
 </script>
 
 <div class="flex min-h-screen flex-col">
