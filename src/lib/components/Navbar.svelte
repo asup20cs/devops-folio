@@ -42,6 +42,7 @@
 <script>
 	import { page } from '$app/stores';
 	import ThemeSelect from '$lib/components/Themes.svelte';
+	import { personalInfo } from '$lib/profile';
 
 	let isMobileMenuOpen = $state(false);
 
@@ -81,7 +82,7 @@
 
 		<!-- Brand/logo -->
 		<div class="flex-1">
-			<a href="/" class="btn btn-ghost text-xl">Ashutosh Khanal Upadhyay</a>
+			<a href="/" class="btn btn-ghost text-xl">{personalInfo.name}</a>
 		</div>
 
 		<!-- Desktop navigation -->
