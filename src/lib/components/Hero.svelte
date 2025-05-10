@@ -36,6 +36,7 @@
 <script>
 	import { fade, fly, scale } from 'svelte/transition';
 	import { backOut, elasticOut } from 'svelte/easing';
+	import { personalInfo } from '$lib/profile';
 
 	// For staggered animations
 	let visible = false;
@@ -57,13 +58,13 @@
 		<!-- Name with fly-in animation -->
 		<div in:fly={{ y: -50, duration: 800, delay: 200, easing: backOut }}>
 			<h1 class="mb-4 text-5xl font-bold md:text-6xl">
-				Hi, I'm <span class="text-primary">Ashutosh Khanal Upadhyay</span>
+				Hi, I'm <span class="text-primary">{personalInfo.name}</span>
 			</h1>
 		</div>
 
 		<!-- Title with scale animation -->
 		<div in:scale={{ start: 0.8, duration: 700, delay: 500, easing: elasticOut }}>
-			<h2 class="text-secondary mb-2 text-2xl font-semibold md:text-3xl">DevOps Enthusiast</h2>
+			<h2 class="text-secondary mb-2 text-2xl font-semibold md:text-3xl">{personalInfo.title}</h2>
 		</div>
 
 		<!-- Description with fade animation -->
@@ -71,9 +72,7 @@
 			class="text-base-content/70 mx-auto mb-6 max-w-xl text-lg"
 			in:fade={{ duration: 800, delay: 700 }}
 		>
-			Passionate about automation, cloud infrastructure, CI/CD, and building resilient systems. I
-			love bridging the gap between development and operations to deliver robust, scalable
-			solutions.
+			{personalInfo.description}
 		</p>
 
 		<!-- Buttons with staggered fly-in animations -->
