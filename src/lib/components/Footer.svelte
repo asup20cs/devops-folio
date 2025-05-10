@@ -53,6 +53,7 @@
 <!-- src/lib/components/Footer.svelte -->
 <script>
 	import { onMount } from 'svelte';
+	import { personalInfo } from '$lib/profile';
 
 	// Tech stack used in this portfolio with Icons8 SVGs
 	const techStack = [
@@ -150,7 +151,7 @@
 		<p class="text-lg">
 			Made with
 			<span class="heart-beat text-error inline-block">❤</span>
-			by <span class="font-bold">Ashutosh Khanal Upadhyay</span>
+			by <span class="font-bold">{personalInfo.name}</span>
 		</p>
 	</div>
 
