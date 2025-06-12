@@ -30,6 +30,11 @@ export const personalInfo = {
 			icon: 'https://img.icons8.com/bubbles/200/linkedin.png'
 		},
 		{
+			name: 'Credly',
+			url: 'https://www.credly.com/users/ashutosh-khanal-upadhyay.dd547dec',
+			icon: 'https://img.icons8.com/clouds/200/credly.png'
+		},
+		{
 			name: 'X',
 			url: 'https://x.com/uashutoshk',
 			icon: 'https://img.icons8.com/ios/250/twitterx--v2.png'
