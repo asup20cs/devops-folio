@@ -201,7 +201,7 @@
 	</section>
 
 	<!-- Tech Stack Section -->
-	<section id="tech-stack" class="scroll-mt-24" in:fly={{ y: 50, duration: 500, delay: 600 }}>
+	<section id="techStack" class="scroll-mt-24" in:fly={{ y: 50, duration: 500, delay: 600 }}>
 		<h2 class="mb-8 flex items-center gap-3 text-3xl font-bold">
 			<img src={sectionIcons.techStack} alt="Tech Stack" class="h-6 w-6" />
 			Tech Stack
