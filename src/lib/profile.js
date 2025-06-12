@@ -16,6 +16,8 @@ export const personalInfo = {
 	email: 'uashutoshk@gmail.com',
 	location: 'Ramgram-3, Parasi, Nepal',
 	githubUsername: 'asup20cs',
+	description:
+		'Passionate about automation, cloud infrastructure, CI/CD, and building resilient systems. I love bridging the gap between development and operations to deliver robust, scalable solutions.',
 	socialLinks: [
 		{
 			name: 'GitHub',
@@ -71,7 +73,40 @@ export const experience = [
 ];
 
 // Certifications
-export const certifications = [];
+export const certifications = [
+	{
+		name: 'Introduction to Kubernetes',
+		image: '/images/certificates/kubernetes.webp'
+	},
+	{
+		name: 'Introduction to GitOps',
+		image: '/images/certificates/gitops.webp'
+	},
+	{
+		name: 'Introduction to OpenTofu',
+		image: '/images/certificates/opentofu.webp'
+	},
+	{
+		name: 'Introduction to DevOps and Site Reliability Engineering',
+		image: '/images/certificates/devops.webp'
+	},
+	{
+		name: 'Introduction to Jenkins',
+		image: '/images/certificates/jenkins.jpg'
+	},
+	{
+		name: 'IT Security: Defense against the digital dark arts',
+		image: '/images/certificates/itsec.webp'
+	},
+	{
+		name: 'Linux Fundamentals',
+		image: '/images/certificates/linuxfun.webp'
+	},
+	{
+		name: 'Operating Systems and You: Becoming a Power User',
+		image: '/images/certificates/os.webp'
+	}
+];
 
 // Skills & Tech Stack
 export const techStack = {
@@ -92,19 +127,27 @@ export const techStack = {
 		{
 			name: 'Docker',
 			icon: 'https://img.icons8.com/?size=100&id=cdYUlRaag9G9&format=png&color=000000'
+		},
+		{
+			name: 'Podman',
+			icon: 'https://www.vectorlogo.zone/logos/podmanio/podmanio-ar21.svg'
 		}
 	],
 
 	// CI/CD & Automation
-	cicd: [
+	'CI/CD': [
 		{ name: 'Jenkins', icon: 'https://img.icons8.com/?size=100&id=39292&format=png&color=000000' }
 	],
 
 	// Infrastructure as Code
-	iac: [
+	IaC: [
 		{
 			name: 'Terraform',
 			icon: 'https://img.icons8.com/?size=100&id=kEkT1u7zTDk5&format=png&color=000000'
+		},
+		{
+			name: 'OpenTofu',
+			icon: 'https://www.vectorlogo.zone/logos/opentofu/opentofu-ar21.svg'
 		}
 	],
 
