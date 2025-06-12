@@ -22,7 +22,7 @@
 		{ id: 'profile', label: 'Profile' },
 		{ id: 'education', label: 'Education' },
 		{ id: 'experience', label: 'Experience' },
-		{ id: 'certifications', label: 'Certifications' },
+		{ id: 'certifications', label: 'Certifications and Courses' },
 		{ id: 'techStack', label: 'Tech Stack' }
 	];
 </script>
@@ -183,41 +183,18 @@
 	>
 		<h2 class="mb-8 flex items-center gap-3 text-3xl font-bold">
 			<img src={sectionIcons.certifications} alt="Certifications" class="h-6 w-6" />
-			Certifications
+			Certifications and Courses
 		</h2>
 
-		<div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+		<div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
 			{#each certifications as cert (cert.name)}
-				<div class="card bg-base-100 shadow-lg transition-shadow hover:shadow-xl">
-					<figure class="px-4 pt-4">
-						<img
-							src={cert.image}
-							alt={cert.name}
-							class="h-48 w-full rounded-lg object-cover shadow"
-						/>
-					</figure>
-					<div class="card-body">
-						<h3 class="card-title text-primary">{cert.name}</h3>
-						<p class="text-sm">
-							<span class="font-semibold">{cert.issuer}</span> •
-							<span>Issued: {cert.date}</span> •
-							<span>Expires: {cert.expiry}</span>
-						</p>
-						<p class="mt-1 text-xs opacity-70">Credential ID: {cert.credentialId}</p>
-
-						{#if cert.verificationUrl}
-							<div class="card-actions mt-2 justify-end">
-								<a
-									href={cert.verificationUrl}
-									target="_blank"
-									rel="noopener noreferrer"
-									class="btn btn-lg btn-outline btn-wide"
-								>
-									Verify
-								</a>
-							</div>
-						{/if}
-					</div>
+				<div class="flex flex-col items-center">
+					<img
+						src={cert.image}
+						alt={cert.name}
+						class="rounded-lg object-contain shadow-lg transition-transform duration-300 hover:scale-150"
+						style="width: 350px; height: 220px;"
+					/>
 				</div>
 			{/each}
 		</div>
