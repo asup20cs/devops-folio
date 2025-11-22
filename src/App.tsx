@@ -9,15 +9,7 @@ import { cn } from "@/lib/utils";
 import { ExternalLink, Github } from "lucide-react";
 
 import { FlickeringGrid } from "@/components/ui/flickering-grid";
-
-// Mocking missing UI components for now to ensure it runs if they aren't there
-// In a real scenario, I'd ensure they are installed via shadcn
-const Section = ({ id, title, children, className }: { id: string, title: string, children: React.ReactNode, className?: string }) => (
-  <section id={id} className={cn("py-12 scroll-mt-20", className)}>
-    <h2 className="text-3xl font-bold tracking-tight mb-6">{title}</h2>
-    {children}
-  </section>
-);
+import { Section } from "@/components/Section";
 
 function App() {
   const [activeSection, setActiveSection] = useState("home");
