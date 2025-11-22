@@ -1,4 +1,4 @@
-# DevOps Portfolio - Ashutosh Khanal Upadhyay
+# DevOps Portfolio
 
 A modern, high-performance DevOps portfolio built with React, Vite, Tailwind CSS, and Framer Motion. Features a sleek dark mode, interactive dock, and dynamic animations.
 
