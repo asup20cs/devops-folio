@@ -76,12 +76,6 @@ function App() {
         <main className="w-full lg:w-[70%] flex flex-col relative z-10">
 
           {/* Header/Nav */}
-          <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-            <div className="container flex h-14 max-w-screen-2xl items-center justify-between px-4">
-              <div className="font-bold text-xl tracking-tighter">DevOps<span className="text-primary">.Port</span></div>
-            </div>
-          </header>
-
           <div className="flex-1 container max-w-4xl mx-auto px-4 py-8 space-y-16">
 
             {/* Hero Section */}
