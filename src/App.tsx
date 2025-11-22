@@ -22,15 +22,9 @@ const Section = ({ id, title, children, className }: { id: string, title: string
 function App() {
   const [activeSection, setActiveSection] = useState("home");
   const { theme } = useTheme();
-  const [gridColor, setGridColor] = useState("#6B7280");
 
-  useEffect(() => {
-    if (theme === "dark") {
-      setGridColor("#6B7280");
-    } else {
-      setGridColor("#9CA3AF");
-    }
-  }, [theme]);
+  // Compute grid color directly from theme to avoid cascading renders
+  const gridColor = theme === "dark" ? "#6B7280" : "#9CA3AF";
 
   useEffect(() => {
     const observer = new IntersectionObserver(
