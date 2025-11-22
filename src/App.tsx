@@ -4,8 +4,6 @@ import { Dock, DockIcon } from "@/components/ui/dock";
 import { ModeToggle } from "@/components/mode-toggle";
 import { ThemeProvider, useTheme } from "@/components/theme-provider";
 import { cn } from "@/lib/utils";
-// Imports removed to fix build errors
-// Local mocks are used where necessary
 import { ExternalLink, Github } from "lucide-react";
 
 import { FlickeringGrid } from "@/components/ui/flickering-grid";
@@ -128,7 +126,7 @@ function App() {
                   <div className="flex flex-wrap gap-4">
                     {profile.skills.languages.map(skill => (
                       <div key={skill.name} className="flex flex-col items-center gap-2 p-3 rounded-lg border bg-card hover:bg-accent/50 transition-colors min-w-[80px]">
-                        <skill.icon className="h-8 w-8 text-primary" />
+                        <skill.icon className="h-8 w-8 text-foreground" />
                         <span className="text-xs font-medium">{skill.name}</span>
                       </div>
                     ))}
@@ -139,7 +137,7 @@ function App() {
                   <div className="flex flex-wrap gap-4">
                     {profile.skills.tools.map(skill => (
                       <div key={skill.name} className="flex flex-col items-center gap-2 p-3 rounded-lg border bg-card hover:bg-accent/50 transition-colors min-w-[80px]">
-                        <skill.icon className="h-8 w-8 text-secondary-foreground" />
+                        <skill.icon className="h-8 w-8 text-foreground" />
                         <span className="text-xs font-medium">{skill.name}</span>
                       </div>
                     ))}
@@ -150,7 +148,18 @@ function App() {
                   <div className="flex flex-wrap gap-4">
                     {profile.skills.cloud.map(skill => (
                       <div key={skill.name} className="flex flex-col items-center gap-2 p-3 rounded-lg border bg-card hover:bg-accent/50 transition-colors min-w-[80px]">
-                        <skill.icon className="h-8 w-8 text-blue-500" />
+                        <skill.icon className="h-8 w-8 text-foreground" />
+                        <span className="text-xs font-medium">{skill.name}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                <div>
+                  <h4 className="text-sm font-medium mb-4 text-muted-foreground uppercase tracking-wider">Software</h4>
+                  <div className="flex flex-wrap gap-4">
+                    {profile.skills.softwares.map(skill => (
+                      <div key={skill.name} className="flex flex-col items-center gap-2 p-3 rounded-lg border bg-card hover:bg-accent/50 transition-colors min-w-[80px]">
+                        <skill.icon className="h-8 w-8 text-foreground" />
                         <span className="text-xs font-medium">{skill.name}</span>
                       </div>
                     ))}
@@ -196,7 +205,7 @@ function App() {
             </Section>
 
             {/* Achievements */}
-            <Section id="achievements" title="Achievements">
+            <Section id="certifications" title="Certifications">
               <div className="grid gap-6 md:grid-cols-2">
                 {profile.achievements.map((ach, index) => (
                   <div
@@ -267,9 +276,5 @@ function App() {
     </ThemeProvider>
   );
 }
-
-// Simple mock components to avoid build errors if shadcn is missing
-// In a real app, these would be imported from @/components/ui/...
-
 
 export default App;
