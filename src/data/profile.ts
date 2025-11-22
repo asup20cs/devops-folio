@@ -1,7 +1,7 @@
 import { Home, GraduationCap, Briefcase, Code, FolderGit2, Trophy, Download } from "lucide-react";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { LiaJenkins } from "react-icons/lia";
-import { SiKubernetes, SiTerraform, SiJenkins, SiPython, SiGnubash, SiDocker, SiAmazon } from "react-icons/si";
+import { SiKubernetes, SiTerraform, SiPython, SiGnubash, SiDocker, SiAmazon } from "react-icons/si";
 import { VscAzureDevops } from "react-icons/vsc";
 
 export const profile = {
