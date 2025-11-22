@@ -11,7 +11,7 @@ export const profile = {
         bio: "Tech Enthusiast with a passion for DevOps, Automation, and Cloud Infrastructure.",
         location: "Ramgram-3, Parasi, Nepal",
         email: "uashutoshk@gmail.com",
-        avatar: "src/assets/profile2.png",
+        avatar: "/assets/profile2.png",
         resume: "/assets/resume.pdf",
         socials: [
             {
@@ -106,7 +106,7 @@ export const profile = {
             issuer: "Linux Foundation",
             url: "https://www.credly.com/users/ashutosh-khanal-upadhyay.dd547dec",
             description: "Completed comprehensive training on Kubernetes fundamentals and container orchestration.",
-            image: "/src/assets/achievements/kubernetes.webp",
+            image: "/assets/achievements/kubernetes.webp",
         },
         {
             title: "Introduction to GitOps",
@@ -114,7 +114,7 @@ export const profile = {
             issuer: "Linux Foundation",
             url: "https://www.credly.com/users/ashutosh-khanal-upadhyay.dd547dec",
             description: "Learned GitOps principles and best practices for infrastructure management.",
-            image: "/src/assets/achievements/gitops.webp",
+            image: "/assets/achievements/gitops.webp",
         },
         {
             title: "Introduction to OpenTofu",
@@ -122,7 +122,7 @@ export const profile = {
             issuer: "Linux Foundation",
             url: "https://www.credly.com/users/ashutosh-khanal-upadhyay.dd547dec",
             description: "Gained expertise in OpenTofu for infrastructure as code.",
-            image: "/src/assets/achievements/opentofu.webp",
+            image: "/assets/achievements/opentofu.webp",
         },
         {
             title: "Introduction to DevOps and Site Reliability Engineering",
@@ -130,7 +130,7 @@ export const profile = {
             issuer: "Linux Foundation",
             url: "https://www.credly.com/users/ashutosh-khanal-upadhyay.dd547dec",
             description: "Comprehensive understanding of DevOps practices and SRE principles.",
-            image: "/src/assets/achievements/devops.webp",
+            image: "/assets/achievements/devops.webp",
         },
         {
             title: "Introduction to Jenkins",
@@ -138,7 +138,7 @@ export const profile = {
             issuer: "Linux Foundation",
             url: "https://www.credly.com/users/ashutosh-khanal-upadhyay.dd547dec",
             description: "Mastered Jenkins for continuous integration and continuous deployment.",
-            image: "/src/assets/achievements/jenkins.jpg",
+            image: "/assets/achievements/jenkins.jpg",
         },
         {
             title: "IT Security: Defense against the digital dark arts",
@@ -146,7 +146,7 @@ export const profile = {
             issuer: "Google",
             url: "https://www.credly.com/users/ashutosh-khanal-upadhyay.dd547dec",
             description: "Comprehensive IT security training covering various security concepts and practices.",
-            image: "/src/assets/achievements/itsec.webp",
+            image: "/assets/achievements/itsec.webp",
         },
         {
             title: "Linux Fundamentals",
@@ -154,7 +154,7 @@ export const profile = {
             issuer: "Linux Foundation",
             url: "https://www.credly.com/users/ashutosh-khanal-upadhyay.dd547dec",
             description: "Solid foundation in Linux operating system and command-line operations.",
-            image: "/src/assets/achievements/linuxfun.webp",
+            image: "/assets/achievements/linuxfun.webp",
         },
         {
             title: "Operating Systems and You: Becoming a Power User",
@@ -162,7 +162,7 @@ export const profile = {
             issuer: "Google",
             url: "https://www.credly.com/users/ashutosh-khanal-upadhyay.dd547dec",
             description: "Advanced operating system concepts and power user techniques.",
-            image: "/src/assets/achievements/os.webp",
+            image: "/assets/achievements/os.webp",
         },
     ],
     dockItems: [
