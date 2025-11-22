@@ -1,6 +1,7 @@
-import { Home, GraduationCap, Briefcase, Code, FolderGit2, Trophy, Download } from "lucide-react";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
-import { LiaJenkins } from "react-icons/lia";
+import { Home, GraduationCap, Briefcase, Code, FolderGit2, Download, } from "lucide-react";
+import { DiIllustrator } from "react-icons/di";
+import { FaFigma, FaGithub, FaLinkedin, FaMicrosoft, FaTwitter } from "react-icons/fa";
+import { LiaCertificateSolid, LiaJenkins } from "react-icons/lia";
 import { SiKubernetes, SiTerraform, SiPython, SiGnubash, SiDocker, SiAmazon } from "react-icons/si";
 import { VscAzureDevops } from "react-icons/vsc";
 
@@ -63,17 +64,23 @@ export const profile = {
             { name: "Kubernetes", icon: SiKubernetes },
             { name: "Terraform", icon: SiTerraform },
             { name: "Jenkins", icon: LiaJenkins },
+            { name: "Git", icon: SiGnubash },
         ],
         cloud: [
             { name: "AWS", icon: SiAmazon },
             { name: "Azure", icon: VscAzureDevops },
         ],
+        softwares: [
+            { name: "Microsoft Office", icon: FaMicrosoft },
+            { name: "Illustrator", icon: DiIllustrator },
+            { name: "Figma", icon: FaFigma },
+        ],
     },
     projects: [
         {
             title: "devops-folio",
-            description: "A personal portfolio website built with SvelteKit and Tailwind CSS.",
-            tech: ["Svelte", "Tailwind CSS"],
+            description: "A personal portfolio website built with React and Magic UI.",
+            tech: ["React", "Magic UI"],
             liveUrl: "https://www.uashutoshk.com.np/",
             repoUrl: "https://github.com/asup20cs/devops-folio",
         },
@@ -144,7 +151,7 @@ export const profile = {
             title: "IT Security: Defense against the digital dark arts",
             year: "2024",
             issuer: "Google",
-            url: "https://www.credly.com/users/ashutosh-khanal-upadhyay.dd547dec",
+            url: "https://www.coursera.org/account/accomplishments/verify/QPBY5WSC9BQH",
             description: "Comprehensive IT security training covering various security concepts and practices.",
             image: "/assets/achievements/itsec.webp",
         },
@@ -152,7 +159,7 @@ export const profile = {
             title: "Linux Fundamentals",
             year: "2024",
             issuer: "Linux Foundation",
-            url: "https://www.credly.com/users/ashutosh-khanal-upadhyay.dd547dec",
+            url: "https://www.coursera.org/account/accomplishments/verify/WZVTCLL8AR79",
             description: "Solid foundation in Linux operating system and command-line operations.",
             image: "/assets/achievements/linuxfun.webp",
         },
@@ -160,7 +167,7 @@ export const profile = {
             title: "Operating Systems and You: Becoming a Power User",
             year: "2024",
             issuer: "Google",
-            url: "https://www.credly.com/users/ashutosh-khanal-upadhyay.dd547dec",
+            url: "https://www.coursera.org/account/accomplishments/verify/K8HY8KRKFRNF",
             description: "Advanced operating system concepts and power user techniques.",
             image: "/assets/achievements/os.webp",
         },
@@ -171,7 +178,7 @@ export const profile = {
         { title: "Experience", icon: Briefcase, href: "#experience" },
         { title: "Skills", icon: Code, href: "#skills" },
         { title: "Projects", icon: FolderGit2, href: "#projects" },
-        { title: "Achievements", icon: Trophy, href: "#achievements" },
+        { title: "Certifications", icon: LiaCertificateSolid, href: "#certifications" },
         { title: "Resume", icon: Download, href: "/assets/resume.pdf" },
     ],
 };
