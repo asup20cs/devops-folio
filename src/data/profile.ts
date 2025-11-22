@@ -1,5 +1,6 @@
 import { Home, GraduationCap, Briefcase, Code, FolderGit2, Trophy, Download } from "lucide-react";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { LiaJenkins } from "react-icons/lia";
 import { SiKubernetes, SiTerraform, SiJenkins, SiPython, SiGnubash, SiDocker, SiAmazon } from "react-icons/si";
 import { VscAzureDevops } from "react-icons/vsc";
 
@@ -10,7 +11,7 @@ export const profile = {
         bio: "Tech Enthusiast with a passion for DevOps, Automation, and Cloud Infrastructure.",
         location: "Ramgram-3, Parasi, Nepal",
         email: "uashutoshk@gmail.com",
-        avatar: "/assets/profile.png",
+        avatar: "src/assets/profile2.png",
         resume: "/assets/resume.pdf",
         socials: [
             {
@@ -61,7 +62,7 @@ export const profile = {
             { name: "Docker", icon: SiDocker },
             { name: "Kubernetes", icon: SiKubernetes },
             { name: "Terraform", icon: SiTerraform },
-            { name: "Jenkins", icon: SiJenkins },
+            { name: "Jenkins", icon: LiaJenkins },
         ],
         cloud: [
             { name: "AWS", icon: SiAmazon },
